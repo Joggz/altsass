@@ -1,0 +1,240 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #edfffd;
+  height: 100vh;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: inherit;
+}
+
+#container > .wrapper {
+  min-width: 75vw;
+  height: 75vh;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6rem;
+}
+
+#container > .wrapper > .first-div {
+  display: flex;
+  flex-direction: column;
+  height: 275px;
+  margin-top: 8rem;
+  flex-basis: 40%;
+}
+
+#container > .wrapper > .first-div > .card_logo {
+  /* if your logo need some style */
+  width: 77px;
+  height: 80px;
+}
+
+#container > .wrapper > .first-div > h3 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 100px;
+}
+
+#container > .wrapper > .first-div p {
+  color: #737373;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+/* Styling the first div content */
+
+.second-div {
+  flex-basis: 65%;
+  display: flex;
+  justify-content: center;
+}
+
+.second-div > form {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 3rem;
+  width: 75%;
+  height: 679px;
+}
+
+.second-div > form > .form_input {
+  width: 580px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.second-div > form > .form_input > .form_input_section {
+  /* display: none; */
+}
+.second-div > form > .form_input > .form_input_section input {
+  /* display: none; */
+  border-radius: 0.5rem;
+}
+.second-div > form > .form_input > .form_input_section select {
+  /* display: none; */
+  border-radius: 0.5rem;
+}
+button {
+  background-color: #2ec4b6;
+}
+
+/* Inner-form styling */
+
+.second-div > form > .form_input > .form_input_section .md {
+  display: flex;
+  justify-content: space-around;
+}
+
+.second-div > form > .form_input > .form_input_section .left {
+  margin-left: 1.5rem;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+::placeholder {
+  padding: 0.5rem;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 35px;
+}
+input,
+#dropdown {
+  width: 238px;
+  height: 48px;
+}
+
+#activity,
+#password,
+button {
+  width: 525px;
+  height: 48px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+button {
+  color: white;
+  border: none;
+}
+
+span a {
+  color: #2ec4b6;
+}
+
+@media (min-width: 364px) and (max-width: 520px) {
+  body {
+    /* overflow-x: none; */
+  }
+
+  #container {
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+    padding-bottom: 2rem;
+  }
+  #container > .wrapper {
+    flex-direction: column;
+    margin-top: 0rem;
+    /* width: 100vw; */
+    /* height: 100vw; */
+  }
+  #container > .wrapper > .first-div {
+    margin-top: 2rem;
+    padding: 0 1.5rem;
+  }
+
+  #container > .wrapper > .first-div > h3 {
+    /* font-family: Brown; */
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 29px;
+    /* letter-spacing: -0.800000011920929px; */
+    text-align: left;
+    color: rgba(0, 11, 10, 1);
+  }
+
+  #container > .wrapper > .first-div p {
+    font-family: Brown;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    width: 337px;
+    height: 50px;
+    top: 196px;
+    left: 24px;
+  }
+
+  .second-div {
+    flex-basis: 65%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .second-div > form {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    width: 90%;
+    margin-top: 1rem;
+    /* padding: 3rem;
+    width: 75%;*/
+    height: 870px;
+  }
+
+  .second-div > form > .form_input > .form_input_section .md {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #activity,
+  #password,
+  button {
+    width: 238px;
+    height: 52px;
+    top: 886px;
+    left: 40px;
+    cursor: pointer;
+  }
+
+  .second-div > form > .form_input > .form_input_section .left {
+    /* width: 295px; */
+    margin-left: 0;
+  }
+
+  .second-div > form > .form_input > .form_input_section {
+    width: 200px;
+  }
+
+  .second-div > form > .form_input > .form_input_section .form-footer {
+    width: 285px;
+    height: 50px;
+    text-align: center;
+    margin-top: 2rem;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 521px) and (max-width: 768px) {
+  body {
+    display: none;
+  }
+}

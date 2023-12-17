@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Page</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+
+<body>
+  <a href="./index.html" class="skip-navigation">Back</a><br/>
+  <img src="./Images/altschool_africa.png" alt="Alt school logo" width="200px" />
+  <form action="process_form.php" method="post">
+    <div id="main-content">
+      <label for="text-input"><b>First Name</b> :</label>
+      <input type="text" id="text-input" name="text-input" placeholder="First Name" required maxlength="15"
+        minlength="5" title="Not more than 15 letters"/>
+      <label for="text-input"><b>Last Name</b> :</label>
+      <input type="text" id="text-input" name="text-input" placeholder="Last name" required maxlength="15" minlength="5"
+        title="Not more than 15 letters" /><br /><br />
+    </div>
+
+
+    <h3>Register</h3>
+
+
+    <p>Fill in this form to continue your registration</p>
+
+
+    <label for="radio"><b> Select your age range :</b></label><br />
+    <input type="radio" id="radio1" name="radio-group" value="option1" />
+    <label for="radio1">13-19</label>
+    <input type="radio" id="radio2" name="radio-group" value="option2" />
+    <label for="radio2">20-40</label>
+    <input type="radio" id="radio3" name="radio-group" value="option3" />
+    <label for="radio3">40-60</label>
+    <input type="radio" id="radio4" name="radio-group" value="option4" />
+    <label for="radio3">60+</label><br /><br />
+
+
+    <!-- <label>Checkbox:</label><br>
+        
+        <label for="check-box1">A</label>
+        <input type="checkbox" id="checkbox1" name="checkbox-group[]" value="option2">
+        <label for="check-box2">B</label><br><br> -->
+
+
+    <label for="date"> <b>Date Of Birth:</b></label>
+    <input type="date" id="date" name="Date" />
+
+
+    <label for="select-dropdown"><b>Select Marital Status</b> :</label>
+    <select id="select-dropdown" name="select-dropdown">
+      <option value="option">Single</option>
+      <option value="option1">Married</option>
+      <option value="option2">Divorced</option>
+      <option value="option3">Widowed</option>
+    </select><br /><br />
+
+
+    <label for="gender"><b>Gender</b>(select one)</label>
+    <select name="gender" id="gender">
+      <option value="option1">Male</option>
+      <option value="option2">Female</option>
+      <option value="option3">Other</option>
+    </select><br /><br />
+
+
+    <label for="gender"><b>Educatin Level</b>(select one)</label>
+    <select name="gender" id="gender">
+      <option value="option1">Bsc</option>
+      <option value="option2">Msc</option>
+      <option value="option3">Doctorate</option>
+      <option value="option3">High School/Secondary school</option>
+      <option value="option3">Under Graduate</option>
+      <option value="option3">Junior/Middle School</option>
+      <option value="option3">Post Graduate</option>
+    </select><br /><br />
+
+
+    <label for="employment-staus"><b>Employment Status:</b></label>
+    <select name="employment-staus" id="employment-staus">
+      <option value="option1">Employed</option>
+      <option value="option2">Self-employed</option>
+      <option value="option3">Unemployed</option>
+    </select><br /><br />
+
+
+    <label for="file-input" class="important-label"><b>A Clear picture of yourself</b>:</label>
+    <input type="file" id="file-input" name="file-input" /><br /><br />
+
+
+    <label for="email-address"><b>E-mail:</b></label>
+    <input type="email" name="email-address" id="email-address" placeholder="example@gmail.com" /><br /><br />
+
+
+    <label for="contact"><b>Contact:</b></label>
+    <select name="contact-list" id="contact-list">
+      <option value="option1">+111</option>
+      <option value="option1">+234</option>
+      <option value="option1">+1-00</option>
+      <option value="option1">+223</option>
+      <option value="option1">+419</option>
+      <option value="option1">+696</option>
+      <option value="option1">+1324</option>
+      <option value="option1">+44</option>
+      <option value="option1">+31</option>
+      <option value="option1">+68</option>
+    </select>
+    <input type="tel" name="contact" id="contact" placeholder="8123456789" maxlength="11" minlength="5" /><br /><br />
+    <label for="track"><b>Select course of choice:</b></label>
+    <select name="track" id="track">
+      <option value="option1">School of Data</option>
+      <option value="option2">School of Product</option>
+      <option value="option3">School of Engineering</option>
+      <option value="option4">School of Creative Economy</option>
+      <option value="option5">School of Business</option>
+    </select><br /><br />
+
+
+    <label for="s/d-code"><b>Schoolarship/Discount Code(optional):</b></label>
+    <input type="text" id="schoolarship" name="school" placeholder="please enter a discount code" required
+      maxlength="7" /><br /><br />
+
+
+    <div id="main-content">
+      <h2>Pasword Details:</h2>
+      <label for="psw">Pasword</label>
+      <input type="password" placeholder="Enter Password" name="psw" id="psw" required maxlength="10" minlength="5"
+        title="5-10 characters" />
+
+
+      <label for="psw-repeat">Confirm Password</label>
+      <input type="password" placeholder="confirm password" name="psw-repeat" id="psw-repeat" required maxlength="10"
+        minlength="5" title="5-10 characters" /><br /><br />
+
+
+      <p>
+        By creating an account you agree to our
+        <a href="#">terms & privacy</a>
+      </p>
+      <input type="checkbox" id="checkbox1" name="checkbox-group[]" value="option1" />
+      <label for="agree">I agree </label><br /><br />
+    </div>
+
+
+    <label for="hidden-input"> Click Submit/Reset:</label>
+    <input type="hidden" id="hidden-input" name="hidden-input" value="hidden-value" />
+    <input type="submit" value="Submit" />
+    <input type="reset" value="Reset" /><br /><br />
+
+
+    <fieldset>
+      <legend>Sign In</legend>
+      <p>
+        Already have an account?
+        <a href="http://portal.altschoolafrica.com/auth/create-account" title="Visit Alt School ./, Website">Sign in</a>
+      </p>
+
+
+      <a href="./index.html" title="about page">Go to about page ?</a>
+    </fieldset>
+  </form>
+</body>
+
+
+</html>

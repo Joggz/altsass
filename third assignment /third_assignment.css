@@ -1,0 +1,278 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dff2ff;
+    font-family: 'Montserrat', sans-serif;
+    /* hieght: 100vh; */
+    /* padding: 1rem; */
+  
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 0.5rem auto;
+    height: 2rem;
+     padding: 1rem;
+     /* border: 1px solid red; */
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    text-decoration: none;
+}
+
+.navlist {
+    text-decoration: none;
+    color: black;
+
+}
+#account{
+    border-radius: 10%;
+    
+    padding: 10px; 
+}
+
+.first_div {
+    background-color: white;
+    padding: 2rem;
+    box-shadow: -1px 4px 10px 1px grey;
+    border-radius: 15px 0 0 15px;
+}
+
+.first_hr{
+    /* margin: 1rem 0 3rem 0; */
+    margin: 1.5rem auto;
+    width: 92%
+}
+
+hr{
+    margin: 2rem 0;
+    
+}
+
+
+.both_divs{
+ 
+}
+
+/* .first_div h1{
+    mar
+} */
+
+.second_div {
+    box-shadow: 2px 6px 14px grey;
+    border-radius: 0 15px 15px 0;
+}
+
+section{
+    margin: auto;
+    /* padding-top: 2rem; */
+
+}
+
+.both_divs {
+    display: flex;
+    justify-content: center;
+    margin-top:2rem;
+
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.form_div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Added */
+
+input{
+    background-color: #EDEFF2;
+    border: none;
+   
+}
+
+input:focus{
+    outline: none;
+}
+
+.cvc{
+    display: flex;
+    height: 37px;
+    width: 5rem;
+}
+
+.one, 
+.two{
+    display: flex;
+    gap: .5rem;
+    margin: 1rem 0;
+}
+
+.name {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+#first_name, 
+#last_name, 
+#email{
+    display: flex;
+    height: 36px;
+    margin-top: 10px;
+    width: 290px;
+    padding-left: 10px;
+
+}
+#email{
+    width: 370px;
+}
+.price{
+    font-size: 50px;
+}
+.second_div{
+    color: white;
+    background-color: #0f6ba9;
+    padding: 2rem;
+}
+
+.renews{
+    margin: 2rem 0;
+    line-height: 1rem;
+}
+.lancer{
+    font-size: 25px;
+}
+
+
+.card-details {
+    display: flex;
+    margin-top: .7rem;
+}
+
+.card-details .card-number {
+    height: 36px;
+    width: 27.5rem;
+    padding-left: 10px;
+}
+
+.card-date,
+.card-cvc{
+    text-align: center;
+    width: 5rem;
+    padding-right: 10px ;
+}
+
+button{
+    width: 37.5rem;
+    height: 52px;
+    color: white;
+    background-color: #038E7D;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.support{
+    margin: 2rem 0;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.support_p{
+    font-size: 15px;
+    color: grey;
+}
+
+.support_span{
+    color: black;
+}
+
+p span{
+    font-weight: 700;
+}
+p a{
+    text-decoration: none;
+    border-bottom: .1rem solid black;
+    color: grey;
+}
+
+.whatever{
+    visibility: hidden;
+}
+
+.support img{
+    width: 1rem;
+    height: 1rem;
+}
+
+
+.empty{
+    height: 2rem;
+}
+.stripe{
+    margin-left: 195px;
+}
+
+
+/************** The second div **************/
+
+.lancer{
+    margin: 2rem 0;
+}
+
+.clients p{
+    margin: 1rem 0;
+}
+
+.sites{
+    margin: 3.5rem 0;
+}
+
+.plan{
+    text-decoration: none;
+    color: white;
+    border-bottom: .2rem solid rgb(131, 222, 255);
+}
+
+.awesome{
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.awesome img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.awesome p{
+    font-size: 15px;
+}
+
+
+footer{
+    color: grey;
+    font-size: 15px;
+    margin-bottom: 5rem;
+}
+
+footer span{
+    color: #0f6ba9;
+}
