@@ -1,0 +1,57 @@
+# Altschool Cloud Engineering assignment by Valentine Madu
+
+## Assignment update
+Your login name: altschool i.e., home directory /home/altschool. The home directory contains the following sub-directories: code, tests, personal, misc Unless otherwise specified, you are running commands from the home directory.
+
+a.Change directory to the tests directory using absolute pathname
+
+b.Change directory to the tests directory using relative pathname
+
+c.Use echo command to create a file named fileA with text content ‘Hello A’ in the misc directory
+
+d.Create an empty file named fileB in the misc directory. Populate the file with a dummy content afterwards
+
+e.Copy contents of fileA into fileC
+
+f.Move contents of fileB into fileD
+
+g.Create a tar archive called misc.tar for the contents of misc directory
+
+h.Compress the tar archive to create a misc.tar.gz file
+
+I. Create a user and force the user to change his/her password upon login
+
+J. Lock a users password
+
+K. Create a user with no login shell
+
+L. Disable password based authentication for ssh
+
+M. Disable root login for ssh
+
+Mode of submission:
+
+you are going to push the required commands to your github repositories.
+
+Deadline: 10th Feb 2024
+
+
+1. sudo useradd -m Altschool or sudo adduser Altschool (create a user with a home directory)
+2. cd ~Altschool (into the home directory of the user)
+3. sudo usermod -aG sudo Altschool (to add Altschool to the sudo group)
+4. sudo chown -R Altschool:Altschool /home/Altschool (to change the ownership of the /home/Altschool to Altschool user)
+5. sudo passwd Altschool (to assign password to the user)
+6. mkdir code tests personal misc
+7. cd /home/Altschool/tests (change directory to tests directory using absolute pathname)
+8. cd ./tests or tests (using relative pathname) 
+9. echo "Hello A" > fileA (create fileA with content of "Hello A" in the misc directory)
+10.touch fileB (create an empty fileB in the misc directory)
+11.tar -cvf misc.tar * (archive all the files in the misc directory inside misc.tar)
+12.gzip misc.tar (to compress the archived file misc.tar to misc.tar.gz)
+13.sudo chage -d 0 fade (forced user fade to change password upon login)
+14.sudo passwd -l tiara (lock user tiara password)
+15.sudo useradd -s /sbin/nologin tade (create user tade with nologin shell)
+16.sudo vi /etc/ssh/sshd_config (to edit the ssh file to disable password based authentication and root login)
+
+
+
