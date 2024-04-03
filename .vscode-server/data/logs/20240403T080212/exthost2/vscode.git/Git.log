@@ -1,0 +1,63 @@
+2024-04-03 08:02:48.276 [info] Log level: Info
+2024-04-03 08:02:48.276 [info] Validating found git in: "git"
+2024-04-03 08:02:48.276 [info] Using git "2.34.1" from "git"
+2024-04-03 08:02:48.277 [info] > git rev-parse --show-toplevel [158ms]
+2024-04-03 08:02:48.277 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-04-03 08:02:48.277 [info] > git rev-parse --show-toplevel [15ms]
+2024-04-03 08:02:48.277 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-04-03 08:02:48.277 [info] > git rev-parse --show-toplevel [9ms]
+2024-04-03 08:02:48.277 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-04-03 08:02:48.277 [info] > git rev-parse --show-toplevel [2ms]
+2024-04-03 08:02:48.277 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-04-03 08:02:48.277 [info] > git rev-parse --show-toplevel [1ms]
+2024-04-03 08:02:48.278 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-04-03 08:02:48.278 [info] > git rev-parse --show-toplevel [2ms]
+2024-04-03 08:02:48.278 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-04-03 08:02:48.278 [info] > git rev-parse --show-toplevel [6ms]
+2024-04-03 08:02:48.278 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-04-03 08:02:48.278 [info] > git rev-parse --show-toplevel [2ms]
+2024-04-03 08:02:48.278 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-04-03 08:03:01.745 [info] > git rev-parse --show-toplevel [3ms]
+2024-04-03 08:03:01.746 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-04-03 08:03:01.751 [info] > git rev-parse --show-toplevel [2ms]
+2024-04-03 08:03:01.751 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-04-03 08:05:11.498 [info] > git rev-parse --show-toplevel [2ms]
+2024-04-03 08:05:11.504 [info] > git rev-parse --git-dir --git-common-dir [2ms]
+2024-04-03 08:05:11.520 [info] Open repository: /home/ubuntu
+2024-04-03 08:05:11.534 [info] No remotes found in the git config file.
+2024-04-03 08:05:11.535 [info] > git config --get commit.template [8ms]
+2024-04-03 08:05:11.538 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [5ms]
+2024-04-03 08:05:11.647 [info] > git status -z -uall [105ms]
+2024-04-03 08:05:11.720 [info] No remotes found in the git config file.
+2024-04-03 08:05:11.721 [info] > git config --get commit.template [5ms]
+2024-04-03 08:05:11.722 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2024-04-03 08:05:11.744 [info] > git status -z -uall [19ms]
+2024-04-03 08:05:12.349 [info] > git check-ignore -v -z --stdin [3ms]
+2024-04-03 08:05:12.898 [info] > git show --textconv :.ansible/playbook.yml [8ms]
+2024-04-03 08:05:12.901 [info] > git ls-files --stage -- /home/ubuntu/.ansible/playbook.yml [6ms]
+2024-04-03 08:05:14.617 [info] No remotes found in the git config file.
+2024-04-03 08:05:14.618 [info] > git config --get commit.template [6ms]
+2024-04-03 08:05:14.620 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2024-04-03 08:05:14.646 [info] > git status -z -uall [23ms]
+2024-04-03 08:05:30.655 [info] No remotes found in the git config file.
+2024-04-03 08:05:30.656 [info] > git config --get commit.template [6ms]
+2024-04-03 08:05:30.663 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [8ms]
+2024-04-03 08:05:30.687 [info] > git status -z -uall [21ms]
+2024-04-03 08:05:35.736 [info] No remotes found in the git config file.
+2024-04-03 08:05:35.737 [info] > git config --get commit.template [6ms]
+2024-04-03 08:05:35.738 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2024-04-03 08:05:35.761 [info] > git status -z -uall [19ms]
+2024-04-03 08:05:40.799 [info] No remotes found in the git config file.
+2024-04-03 08:05:40.800 [info] > git config --get commit.template [6ms]
+2024-04-03 08:05:40.802 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2024-04-03 08:05:40.820 [info] > git status -z -uall [15ms]
+2024-04-03 08:05:45.861 [info] No remotes found in the git config file.
+2024-04-03 08:05:45.862 [info] > git config --get commit.template [6ms]
+2024-04-03 08:05:45.864 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2024-04-03 08:05:45.883 [info] > git status -z -uall [16ms]
+2024-04-03 08:05:47.857 [info] > git show --textconv :.sudo_as_admin_successful [5ms]
+2024-04-03 08:05:47.861 [info] > git ls-files --stage -- /home/ubuntu/.sudo_as_admin_successful [5ms]
+2024-04-03 08:05:50.919 [info] No remotes found in the git config file.
+2024-04-03 08:05:50.920 [info] > git config --get commit.template [6ms]
+2024-04-03 08:05:50.922 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2024-04-03 08:05:50.956 [info] > git status -z -uall [31ms]

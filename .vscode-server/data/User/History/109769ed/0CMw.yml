@@ -1,0 +1,15 @@
+---
+- name: Install Git on server
+  dnf:
+    name: git
+    state: present
+    update_cache: yes
+    when: ansible_distribution == 'CentOS'
+ 
+- name : Task to clone github repo
+  git:
+    repo: "{{repository}}"
+    dest: "{{dir_to_be_copied_to}}"
+    clone: yes
+
+

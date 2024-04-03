@@ -1,0 +1,77 @@
+---
+- name: 
+  set_fact:
+    apache_pkg: "{{ 'apache2' if ansible_distribution == 'Ubuntu' else 'httpd' }}"
+    path_to_directory: "{{ '/home/ubuntu/project' if ansible_distribution == 'Ubuntu' else '/home/ec2-user/project' }}"
+    set_virtualhost_src:  "{{ 'roles/apache/templates/apache2.conf.j2' if ansible_distribution == 'Ubuntu' else 'roles/apache/templates/httpd.conf.j2' }}"
+    set_virtualhost_dest:  "{{ '/etc/apache2/sites-available/{{ http_conf }}'' if ansible_distribution == 'Ubuntu' else '/etc/httpd/conf.d/e{{http_conf}}' }}"
+# - name: Task to install Apache2 on  ubuntu
+#   package: 
+#     name: "{{apache_pkg}}"
+#     state: present
+#     update_cache: yes
+#   # when:   ansible_distribution == 'Ubuntu'  
+
+- name: Task to install Apache2 on  ubuntu
+  apt: 
+    name: "apache2"
+    state: present
+    update_cache: yes
+  when:   ansible_distribution == 'Ubuntu'
+
+- name: Task to install Apache2 on  Centos
+  dnf: 
+    name: "httpd"
+    state: present
+    update_cache: yes
+  when:   ansible_distribution != 'Ubuntu'
+  remote_src: yes
+
+  
+- name: Set up Apache Virtualhost
+  template: 
+    src: "roles/apache/templates/apache2.conf.j2"
+    dest: "/etc/apache2/sites-available/{{ http_conf }}"
+
+- name: Enable new Site
+  shell: /usr/sbin/a2ensite {{http_conf}}
+  notify:  Reload Apache 
+
+- name: Disable Default Apache site
+  shell: /usr/sbin/a2dissite 000-default.conf
+  when: disable_default
+  notify:  Reload Apache 
+
+# - name: "UFW - Allow HTTP on port {{ http_port }}"
+#   ufw:
+#     rule: allow
+#     port: "{{http_port}}"
+#     proto: tcp
+
+
+# # - name: Copy Apache Configuration template to the server 
+# #   template:
+# #     src: apache2.j2 
+# #     dest: /etc/apache2/sites-available/000-default.conf
+# #     owner: root 
+# #     group: root 
+# #     mode: 0644
+# #   notify:
+# #     - Restart Apache2
+  
+
+#  # create document root
+#   # copy index web page
+#   # setup Apache virtual host
+#   # Enable new site
+#   # Disable default Apache site
+#   # allow hhrp on port
+
+
+# # ansible.builtin.mv:
+# # - name: Create Document root
+# #   file:
+# #     path: "/var/www/{{http_host}}"
+# #     state: directory
+# #     owner: "{{app_user}}"
+# #     mode: '0755'

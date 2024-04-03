@@ -1,0 +1,10 @@
+---
+default_variables_for_roles: "This is default variables for roles"
+name : apache2 
+server_name: "altschool"
+document_root: "/var/www/html"
+ssl_certificate_file: "/etc/ssl/certs/ssl-cert-snakeoil.pem"
+ssl_certificate_key_file: "/etc/ssl/private/ssl-cert-snakeoil.key"
+enable_ssl: "yes"
+error_log: "/var/log/apache2/error.log"
+custom_log: "/var/log/apache2/access.log"

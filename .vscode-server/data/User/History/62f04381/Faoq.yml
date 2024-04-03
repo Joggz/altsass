@@ -1,0 +1,38 @@
+---
+# - name: Install Git on Centos
+#   hosts: centos
+#   become: yes
+#   vars_files:
+#     - roles/git/default/main.yml
+#   roles: 
+#     # - apache
+#     - git
+
+# - name: Install Git on ubuntu
+#   hosts: ubuntu
+#   become: yes
+#   vars_files:
+#     - roles/git/default/main.yml
+#   roles: 
+#     # - apache
+#     - git
+
+- name: Role to clone project
+  hosts: all
+  become: yes
+  vars_files:
+    - roles/git/default/main.yml
+  roles: 
+    # - apache
+    - git
+
+- name: Role to Install Apache
+  hosts: all
+  become: yes
+  vars_files:
+    - roles/apache/default/main.yml
+  roles: 
+    - apache
+    # - git
+
+

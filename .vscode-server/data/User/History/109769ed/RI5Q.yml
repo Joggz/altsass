@@ -1,0 +1,21 @@
+---
+- name: Install Git on CentOS
+  yum:
+    name: git
+    state: present
+  # when: ansible_distribution !== 'rhel'
+
+- name: Install Git on Ubuntu
+  package:
+    name: git
+    state: present
+  when: ansible_distribution == 'Ubuntu'
+
+
+- name : Task to clone github repo
+  git:
+    repo: "{{repository}}"
+    dest: "{{dir_to_be_copied_to}}"
+    clone: yes
+
+
