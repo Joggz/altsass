@@ -1,3 +1,0 @@
-[webservers]
-44.203.48.7 apache_pkg=apache2
-44.201.188.28 ansible_user=ec2-user  apache_pkg=httpd

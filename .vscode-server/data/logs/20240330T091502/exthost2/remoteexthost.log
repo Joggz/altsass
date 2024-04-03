@@ -1,8 +1,0 @@
-2024-03-30 09:23:19.031 [info] Extension host with pid 31478 started
-2024-03-30 09:23:19.035 [error] Error: EEXIST: file already exists, open '/home/ubuntu/.vscode-server/data/User/workspaceStorage/2748aec4dd561b56b9c617073cba8c8a/vscode.lock'
-2024-03-30 09:23:19.041 [info] Lock '/home/ubuntu/.vscode-server/data/User/workspaceStorage/2748aec4dd561b56b9c617073cba8c8a/vscode.lock': Could not acquire lock, checking if the file is stale.
-2024-03-30 09:23:19.055 [info] Lock '/home/ubuntu/.vscode-server/data/User/workspaceStorage/2748aec4dd561b56b9c617073cba8c8a/vscode.lock': The lock does not look stale, elapsed: 841 ms, giving up.
-2024-03-30 09:23:19.060 [info] Lock '/home/ubuntu/.vscode-server/data/User/workspaceStorage/2748aec4dd561b56b9c617073cba8c8a-1/vscode.lock': Lock acquired.
-2024-03-30 11:31:29.279 [info] Extension host terminating: renderer disconnected for too long (2)
-2024-03-30 11:31:29.281 [info] Lock '/home/ubuntu/.vscode-server/data/User/workspaceStorage/2748aec4dd561b56b9c617073cba8c8a-1/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
-2024-03-30 11:31:29.284 [info] Extension host with pid 31478 exiting with code 0

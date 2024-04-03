@@ -1,6 +1,0 @@
-[webservers]
-44.203.48.7 apache_package=apache2
-
-[dbservers]
-44.201.188.28 ansible_user=ec2-user  apache_package=httpd ansible_python_interpreter="/usr/bin/python3"
-ansible_

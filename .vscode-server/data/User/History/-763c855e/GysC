@@ -1,5 +1,0 @@
-[centos]
- 44.201.188.28 Apache_package_name=httpd Apache_service_name=httpd
-
-[ubuntu]
-44.203.48.7 Apache_package_name=apache2 Apache_service_name=apache2

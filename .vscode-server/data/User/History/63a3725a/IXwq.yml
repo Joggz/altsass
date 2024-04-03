@@ -1,5 +1,0 @@
----
-repository: "https://github.com/Joggz/altsass.git/"
-dir_to_be_copied_to: "/home/ec2-user/project"
-ansible_python_interpreter: /usr/bin/python3
-# use_backend:  yum
